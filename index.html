@@ -1,19 +1,18 @@
 <html>
   <head>
     <script>
-      const queryString = window.location.search;
-      const urlParams = new URLSearchParams(queryString);
-      const node = urlParams.get('node')
-      document.getElementsByTagName('iframe')[0].src += node;
+
     </script>
   </head>
   <body>
     <iframe width="90%" height="90vh" display="block" src="https://short.ink/" frameborder="0" scrolling="0" allowfullscreen></iframe>
   </body>
   <script>
-    const queryString = window.location.search;
-    const urlParams = new URLSearchParams(queryString);
-    const node = urlParams.get('node')
-    document.getElementsByTagName('iframe')[0].src += node;
+    document.addEventListener("DOMContentLoaded", () => {
+      const queryString = window.location.search;
+      const urlParams = new URLSearchParams(queryString);
+      const node = urlParams.get('node')
+      document.getElementsByTagName('iframe')[0].src += node;
+    });
   </script>
 </html>
