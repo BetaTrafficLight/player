@@ -1,19 +1,19 @@
 <html>
   <head>
-    <scipt>
+    <script>
       const queryString = window.location.search;
       const urlParams = new URLSearchParams(queryString);
       const node = urlParams.get('node')
       document.getElementsByTagName('iframe')[0].src += node;
-    </scipt>
+    </script>
   </head>
   <body>
     <iframe width="90%" height="90vh" style="display:block;" src="https://short.ink/" frameborder="0" scrolling="0" allowfullscreen></iframe>
   </body>
-  <scipt>
+  <script>
     const queryString = window.location.search;
     const urlParams = new URLSearchParams(queryString);
     const node = urlParams.get('node')
     document.getElementsByTagName('iframe')[0].src += node;
-  </scipt>
+  </script>
 </html>
